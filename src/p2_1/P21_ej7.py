@@ -18,8 +18,5 @@ def main():
     except ValueError:
         print("No tienes que poner € al final , tiene que ser un numero positivo y no pueden ser letras")
 
-
-
-
 if __name__ == "__main__":
     main()
