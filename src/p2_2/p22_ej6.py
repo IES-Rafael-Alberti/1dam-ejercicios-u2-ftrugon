@@ -1,13 +1,14 @@
 def estrellas(numeestre):
     if numeestre < 0:
         print("el numero tiene que ser positivo")
+        return "el numero tiene que ser positivo"
     cont = 0
     linea = ""
-    while cont <= numeestre:
-        print(linea)
-        linea = linea + "*"
+    while cont < numeestre:
         cont += 1
-
+        linea = linea + "*"
+        print(linea)
+    return linea
 
 
 def main():
@@ -16,3 +17,9 @@ def main():
     
 if __name__ == "__main__":
     main()
+
+"""
+caracter = "*"
+for i in range(1,numestre +1)
+    print(caracter * i)
+"""

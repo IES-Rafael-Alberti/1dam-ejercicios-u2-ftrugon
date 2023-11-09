@@ -12,11 +12,8 @@ def tipo_impositivo(renta):
     return tipo_renta
 
 def main():
-    try:
-        renta = int(input("Dime tu renta anual: "))
-        print(tipo_impositivo(renta))
-    except ValueError:
-        print("No tienes que poner € al final , tiene que ser un numero positivo y no pueden ser letras")
+    renta = int(input("Dime tu renta anual: "))
+    print(tipo_impositivo(renta))
 
 if __name__ == "__main__":
     main()

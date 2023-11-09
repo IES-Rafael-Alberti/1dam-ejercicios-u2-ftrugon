@@ -14,22 +14,32 @@ def puntuacion():
         return numpunt
     elif numpunt >= 0.6:
         return numpunt
-    else:
-        print("el numero tiene que ser uno de los de la tabla de arriba")
+
+
 
 def niveles(numpunt):
     cobrado = 2400 * numpunt
+    linea = ""
     if numpunt == 0.0:
-        print(f"Tu nivel es inaceptable ,vas a recibir {cobrado}€")
+        linea = f"Tu nivel es inaceptable ,vas a recibir {cobrado}€"
     elif numpunt == 0.4:
-        print(f"Tu nivel es aceptable, vas a recibir {cobrado}€")
+        linea = f"Tu nivel es aceptable, vas a recibir {cobrado}€"
     elif numpunt >= 0.6:
-        print(f"Tu nivel es meritario, vas a recibir {cobrado}€")
+        linea = f"Tu nivel es meritario, vas a recibir {cobrado}€"
+    return linea
+
+
+
 
 def main():
-    latabla()
-    numpunt = puntuacion()
-    niveles(numpunt)
+    try:
+        latabla()
+        numpunt = puntuacion()
+        linea = niveles(numpunt)
+        print(linea)
+    except:
+        print("el numero tiene que ser uno de los de la tabla de arriba")
+
 
 if __name__ == "__main__":
     main()

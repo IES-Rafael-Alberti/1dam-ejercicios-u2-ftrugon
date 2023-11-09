@@ -13,14 +13,23 @@ def escalera(numero):
     while cont < numero:
         print(linea)
         nume1 += 2
-        linea = linea + f" {nume1}"
+        linea =f"{nume1} " + linea
         cont += 1
-    
+
+
 def main():
     
     numero = numeserie()
     escalera(numero)
 
-
 if __name__ == "__main__":
     main()
+
+"""
+BUCLE FOR EJEMPLO DE CESAR 
+
+for i in range(0, numero +1)
+    for j in range(2 * 1 - 1,0,-2)
+        print(j,end=" ")
+    print()
+"""
