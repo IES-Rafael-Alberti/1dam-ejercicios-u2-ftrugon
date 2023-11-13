@@ -6,7 +6,9 @@ def serienum():
         num = int(input("Dame otro numero, 0 si quieres que acabe: "))
         linea = linea + f" + {num}"
         sumanum2 = sumanum2 + num
-    print(f"Serie => {linea} = {sumanum2}")
+    serie = f"Serie => {linea} = {sumanum2}"
+    print(serie)
+    return serie
 
 def main():
     serienum()

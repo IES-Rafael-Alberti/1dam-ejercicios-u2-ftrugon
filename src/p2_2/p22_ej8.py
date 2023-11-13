@@ -9,12 +9,13 @@ def numeserie():
 def escalera(numero):
     cont = 0
     nume1 = 1
-    linea = f"{nume1}"
+    linea = ""
     while cont < numero:
+        linea =f"{nume1}" + f" {linea}" 
         print(linea)
         nume1 += 2
-        linea =f"{nume1} " + linea
         cont += 1
+    return linea
 
 
 def main():
